@@ -9,7 +9,9 @@ POST {{baseUrl}}/products
 Content-Type: {{contentType}}
 
 {
-    "name": "Samsung TV"
+    "id": "PID001",
+    "name": "Samsung TV",
+    "price": 70000
 }
 
 ### Show a product
