@@ -1,0 +1,27 @@
+@baseUrl = {{protocol}}://{{host}}:{{port}}
+@contentType = application/json
+
+### List products
+GET {{baseUrl}}/products
+
+### Create a product
+POST {{baseUrl}}/products
+Content-Type: {{contentType}}
+
+{
+    "name": "Samsung TV"
+}
+
+### Show a product
+GET {{baseUrl}}/products/PID001
+
+### Update a product
+PATCH {{baseUrl}}/products/PID001
+Content-Type: {{contentType}}
+
+{
+    "name": "Samsung LED TV"
+}
+
+### Delete a product
+DELETE {{baseUrl}}/products/PID001

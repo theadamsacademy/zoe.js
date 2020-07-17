@@ -3,10 +3,10 @@ import express from 'express'
 
 dotenv.config()
 
-const app = express()
+const app = express();
 
-app.get('/', (request, response) => {
-  response.end('Hello World!')
-})
+(async () => {
+  app.use('/products', (await import('../api/product/product_router.js')).default)
+})()
 
 export default app

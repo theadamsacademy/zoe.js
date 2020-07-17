@@ -2,5 +2,14 @@
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true
+  },
+  "rest-client.environmentVariables": {
+    "$shared": {
+    },
+    "development": {
+        "protocol": "http",
+        "host": "localhost",
+        "port": "5000"
+    }
   }
 }
